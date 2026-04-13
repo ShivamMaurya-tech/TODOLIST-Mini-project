@@ -1,0 +1,66 @@
+h1{
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+#inputbox{
+    height: fit-content;
+    width: fit-content;
+     border: 2px solid black;
+    
+}
+
+.btn1{
+    
+    height: fit-content;
+    width:fit-content;
+border-radius: 10px;
+    background-color: yellow;
+    margin: 10px;
+    flex-direction: row;
+   
+   
+} 
+ 
+
+li{
+   
+    list-style-type:  circle;
+    grid-template-columns: 1fr 0.1fr;
+   margin-top: 50px;
+    font-weight: 500;
+ 
+   
+    
+     
+    
+}
+
+body{
+    
+    display: inline-block;
+   flex-direction: column;
+/* background:url(todolist\ .gif); */
+background-size:cover;
+    margin-top: 100px;
+   background-color: rgba(240, 240, 24, 0.759);
+    margin-left: 40%;
+    position: absolute;
+   
+}
+ .delbtn{
+   
+    border-radius: 10px;
+    background-color: yellow;
+      
+      margin-left: 70%;
+display: flex;
+flex-direction: column;
+font-size: 15px;
+margin-top: -20px;
+
+   
+}  
+
+
+

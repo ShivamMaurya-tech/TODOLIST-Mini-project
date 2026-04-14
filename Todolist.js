@@ -29,11 +29,11 @@ return localStorage.setItem("YoutubeList",JSON.stringify(elementarray));
     // addtodolist(element);
     
     let divelement=document.createElement('div');
-    divelement.classList.add(".divtodoelement");
+    divelement.classList.add('todo-item');
     divelement.innerHTML=`<li>${element}</li>
     <button class="delbtn">Delete</button>`;
     
-addelement.append(divelement);
+    addelement.append(divelement);
 
    }
 

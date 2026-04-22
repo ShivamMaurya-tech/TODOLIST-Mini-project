@@ -7,6 +7,9 @@ let addelement=document.querySelector(".addingelement");
 let Deletebtn=document.querySelector(".delbtn");
 // let maintodoelement=document.querySelector(".divtodoelement");
 
+
+
+//------------------2nd part
 const handlebutton=()=>{
     addtodolist();
 };
@@ -15,7 +18,7 @@ const handlebutton=()=>{
 
 
 const gettodolistfromlocal=()=>{
-    return JSON.parse(localStorage.getItem("Youtubeplaylist"));
+    // return JSON.parse(localStorage.getItem("Youtubeplaylist"));
 }
 
 const addtodolistlocalstorage=(elementarray=>{
@@ -23,7 +26,7 @@ return localStorage.setItem("YoutubeList",JSON.stringify(elementarray));
 });
 
 
-
+//---------------5th part
   let  elementarray=gettodolistfromlocal()||[];
    const addtododynamiclist=(element)=>{
     // addtodolist(element);
@@ -39,7 +42,7 @@ return localStorage.setItem("YoutubeList",JSON.stringify(elementarray));
 
 
 
-
+//------------------3rd part
 const addtodolist=()=>{
    
 
@@ -59,7 +62,7 @@ const addtodolist=()=>{
 
 
 
-// JSON.parse(localStorage.getItem("Youtubeplaylist"));
+JSON.parse(localStorage.getItem("Youtubeplaylist"));
 
 // addelement.append(divelement);
 inputfield.value="";
@@ -73,7 +76,7 @@ inputfield.value="";
 
 
 
-
+//-----------first part
 const showtodolist=()=>{
 
     console.log(elementarray);

@@ -18,7 +18,7 @@ const handlebutton=()=>{
 
 
 const gettodolistfromlocal=()=>{
-    // return JSON.parse(localStorage.getItem("Youtubeplaylist"));
+   // return JSON.parse(localStorage.getItem("Youtubeplaylist"));
 }
 
 const addtodolistlocalstorage=(elementarray=>{
@@ -28,6 +28,8 @@ return localStorage.setItem("YoutubeList",JSON.stringify(elementarray));
 
 //---------------5th part
   let  elementarray=gettodolistfromlocal()||[];
+
+
    const addtododynamiclist=(element)=>{
     // addtodolist(element);
     
@@ -80,10 +82,10 @@ inputfield.value="";
 const showtodolist=()=>{
 
     console.log(elementarray);
-   elementarray.forEach(element => {
+  elementarray.forEach(element => {
         addtododynamiclist(element);
         
-    });
+  });
 }
 showtodolist();
 
@@ -114,7 +116,7 @@ const removetodoelement=(e)=>{
 
     elementarray=elementarray.filter((currenttodo)=>{
 
-return currenttodo!=deletetodoelementcontent.toLowerCase();
+return currenttodo!=deletetodoelementcontent.toLowerCase()&&currenttodo!=deletetodoelementcontent.toUpperCase()&&currenttodo!=deletetodoelementcontent;
     })
 console.log(elementarray);
 addtodolistlocalstorage(elementarray);

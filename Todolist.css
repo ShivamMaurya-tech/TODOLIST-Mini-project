@@ -44,7 +44,7 @@ h1 {
 }
 
 #inputbox {
-    /* flex: 1 1 220px; */
+    flex: 1 1 50px;
     width: 100%;
     min-width: 0;
     padding: 14px 16px;
